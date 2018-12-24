@@ -1,4 +1,4 @@
-package edu.otaviotarelho.tutorialone;
+package edu.otaviotarelho.tutorialone.producer.producer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;

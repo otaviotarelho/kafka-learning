@@ -1,4 +1,4 @@
-package edu.otaviotarelho.tutorialone;
+package edu.otaviotarelho.tutorialone.producer.producer;
 
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -6,12 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
+import java.util.concurrent.ExecutionException;
 
-public class ProducerDemoWithCallback {
+public class ProducerDemoWithKeys {
 
-    private static Logger log = LoggerFactory.getLogger(ProducerDemoWithCallback.class);
+    private static Logger log = LoggerFactory.getLogger(ProducerDemoWithKeys.class);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         //create properties
         Properties properties = new Properties();
@@ -23,12 +24,16 @@ public class ProducerDemoWithCallback {
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
         ProducerRecord<String, String> record;
 
+        String topic = "first_topic";
 
         //send
         for(int i = 0; i < 10; i++){
             //create producer record
-            record = new ProducerRecord<String, String>("first_topic", "hallo world = " + i);
+            String helloworld = "hello world = " + i;
+            String key = "id_" + i;
 
+            record = new ProducerRecord<String, String>(topic, key, helloworld);
+            log.info("key:" + key);
             producer.send(record, new Callback() {
                 public void onCompletion(RecordMetadata recordMetadata, Exception e) {
                     if(e == null) {
@@ -42,7 +47,7 @@ public class ProducerDemoWithCallback {
                         log.info("Error in production", e);
                     }
                 }
-            });
+            }).get(); //block the sender to be sync, dont do it in production
         }
 
         //flush and close producer
