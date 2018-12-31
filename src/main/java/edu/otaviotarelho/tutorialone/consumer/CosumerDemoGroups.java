@@ -1,12 +1,10 @@
-package edu.otaviotarelho.tutorialone.producer.consumer;
+package edu.otaviotarelho.tutorialone.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,13 +12,13 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
-public class CosumerDemo {
+public class CosumerDemoGroups {
 
-    public static Logger log = LoggerFactory.getLogger(CosumerDemo.class.getName());
-    public static String groupid = "my-fourth-application";
+    public static Logger log = LoggerFactory.getLogger(CosumerDemoGroups.class.getName());
+    public static String groupid = "my-fifth-application";
 
     public static void main(String[] args) {
-
+        //groups are rebalanced auto
         //create consumer configs
         Properties properties = new Properties();
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
