@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0890872-835e-4932-af67-ba09e5a512d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kafkalearning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemoGroups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/consumer/CosumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemoWithCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemoWithCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemoWithKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemoWithKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemoWithThreads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/kafkalearning.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/otaviotarelho/tutorialone/producer/consumer/CosumerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemoWithCallback$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemoWithCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemoWithKeys$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/otaviotarelho/tutorialone/producer/producer/ProducerDemoWithKeys.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,13 +60,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemoGroups.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
                 <element signature="e#1337#1353#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemoWithThreads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+              <folding>
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/consumer/CosumerDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemoGroups.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemoWithThreads.java" />
       </list>
     </option>
   </component>
@@ -107,10 +121,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="955" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="838" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -193,6 +206,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.otaviotarelho.tutorialone.consumer" />
       <recent name="edu.otaviotarelho.tutorialone" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -211,13 +225,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CosumerDemo">
+  <component name="RunManager" selected="Application.CosumerDemoWithThreads">
     <configuration name="CosumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.otaviotarelho.tutorialone.producer.consumer.CosumerDemo" />
       <module name="kafkalearning" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.otaviotarelho.tutorialone.producer.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CosumerDemoWithThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.otaviotarelho.tutorialone.consumer.CosumerDemoWithThreads" />
+      <module name="kafkalearning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.otaviotarelho.tutorialone.consumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -266,6 +293,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CosumerDemoWithThreads" />
         <item itemvalue="Application.CosumerDemo" />
         <item itemvalue="Application.ProducerDemoWithKeys" />
         <item itemvalue="Application.ProducerDemoWithCallback" />
@@ -284,25 +312,25 @@
       <option name="presentableId" value="Default" />
       <updated>1545613377724</updated>
       <workItem from="1545613381619" duration="5158000" />
-      <workItem from="1546224182211" duration="420000" />
+      <workItem from="1546224182211" duration="1987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5578000" />
+    <option name="totallyTimeSpent" value="7145000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="955" extended-state="6" />
+    <frame x="0" y="0" width="904" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.51972157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32908458" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,6 +401,17 @@
           <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
             <element signature="e#1337#1353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/consumer/CosumerDemoWithThreads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
           </folding>
         </state>
       </provider>
