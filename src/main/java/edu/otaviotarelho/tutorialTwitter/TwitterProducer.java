@@ -8,12 +8,10 @@ import com.twitter.hbc.core.Hosts;
 import com.twitter.hbc.core.HttpHosts;
 import com.twitter.hbc.core.endpoint.StatusesFilterEndpoint;
 import com.twitter.hbc.core.processor.StringDelimitedProcessor;
-import com.twitter.hbc.httpclient.BasicClient;
 import com.twitter.hbc.httpclient.auth.Authentication;
 import com.twitter.hbc.httpclient.auth.OAuth1;
 import edu.otaviotarelho.secretsKeys.SecretKeys;
 import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -62,15 +60,20 @@ public class TwitterProducer {
     private KafkaProducer<String, String> createKafkaProducer() {
 
         //create properties
-        Properties properties = new Properties();
-        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        Properties properties = SecretKeys.DefoultProperties();
+
+        //creating safer producer
+        properties.setProperty(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, "true");
+        properties.setProperty(ProducerConfig.ACKS_CONFIG, "all");
+        properties.setProperty(ProducerConfig.RETRIES_CONFIG, Integer.toString(Integer.MAX_VALUE));
+        properties.setProperty(ProducerConfig.MAX_IN_FLIGHT_REQUESTS_PER_CONNECTION, "5");
 
         //Start kafka producer
         return new KafkaProducer<String, String>(properties);
 
     }
+
+
 
     private void SendMessage(Client cliente) {
         //loop and send twitter

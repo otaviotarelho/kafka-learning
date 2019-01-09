@@ -1,5 +1,7 @@
 package edu.otaviotarelho.tutorialone.producer;
 
+import edu.otaviotarelho.secretsKeys.SecretKeys;
+import edu.otaviotarelho.tutorialTwitter.TwitterProducer;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
@@ -14,14 +16,8 @@ public class ProducerDemoWithKeys {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        //create properties
-        Properties properties = new Properties();
-        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-
         //Start kafka producer
-        KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
+        KafkaProducer<String, String> producer = new KafkaProducer<String, String>(SecretKeys.DefoultProperties());
         ProducerRecord<String, String> record;
 
         String topic = "first_topic";
