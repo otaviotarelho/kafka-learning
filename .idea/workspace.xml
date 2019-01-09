@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d0890872-835e-4932-af67-ba09e5a512d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialTwitter/TwitterProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialTwitter/TwitterProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemoWithCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemoWithCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemoWithKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialone/producer/ProducerDemoWithKeys.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialTwitter/TwitterProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="389">
+              <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -328,12 +325,12 @@
       <workItem from="1546224182211" duration="2785000" />
       <workItem from="1546816062859" duration="798000" />
       <workItem from="1546822860468" duration="3555000" />
-      <workItem from="1546991942089" duration="1295000" />
+      <workItem from="1546991942089" duration="1445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13591000" />
+    <option name="totallyTimeSpent" value="13741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -455,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/otaviotarelho/tutorialTwitter/TwitterProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+        <state relative-caret-position="389">
+          <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
