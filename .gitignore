@@ -28,9 +28,8 @@
 .idea/modules.xml
 .idea/*.iml
 .idea/modules
-
-/target/classes/edu/otaviotarelho/secretsKeys/*.class
-/src/main/java/edu/otaviotarelho/secretsKeys/*.java
+/firstDemos/src/main/java/edu/otaviotarelho/secretsKeys/*
+/firstDemos/target/*
 /kafka_consumer_elastic_search/src/main/java/edu/otaviotarelho/kafka/tutorial3/secret/*.java
 kafka_consumer_elastic_search/target/*
 .DS_STORE

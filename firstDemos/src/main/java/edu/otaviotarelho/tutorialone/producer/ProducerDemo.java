@@ -1,6 +1,5 @@
 package edu.otaviotarelho.tutorialone.producer;
 
-import edu.otaviotarelho.secretsKeys.SecretKeys;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 

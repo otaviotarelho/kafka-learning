@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="firstDemos" />
         <module name="kafka_consumer_elastic_search" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="firstDemos" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
