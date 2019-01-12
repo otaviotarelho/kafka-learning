@@ -6,6 +6,7 @@
 
     <groupId>edu.otaviotarelho</groupId>
     <artifactId>kafka-learning</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
     <build>
         <plugins>
@@ -19,6 +20,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>kafka_consumer_elastic_search</module>
+    </modules>
 
     <dependencies>
         <dependency>

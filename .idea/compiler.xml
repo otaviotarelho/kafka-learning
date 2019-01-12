@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kafkalearning" />
+        <module name="kafka_consumer_elastic_search" />
       </profile>
     </annotationProcessing>
   </component>
